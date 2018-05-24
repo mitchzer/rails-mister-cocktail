@@ -23,5 +23,4 @@ private
   def params_dose
     params.require(:dose).permit(:description, :ingredient_id, :cocktail_id)
   end
-
 end
