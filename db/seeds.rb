@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Ingredient.create(name: "lemon")
-Ingredient.create(name: "ice")
-Ingredient.create(name: "mint leaves")
-Cocktail.create(name: "mojito")
-Cocktail.create(name: "capiranha")
-Cocktail.create(name: "sex on the beach")
+Ingredient.create(name: "Lemon")
+Ingredient.create(name: "Ice")
+Ingredient.create(name: "Mint Leaves")
+Cocktail.create(name: "Mojito")
+Cocktail.create(name: "Capiranha")
+Cocktail.create(name: "Sex on the beach")
