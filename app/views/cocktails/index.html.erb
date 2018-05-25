@@ -1,19 +1,28 @@
-<h1>Cocktails' list</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+      <h1>Cocktails' list</h1>
+    </div>
+  </div>
 
-<ul>
-  <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %>
-  <% end %>
-</ul>
+  <div class="row">
+    <ul>
+      <% @cocktails.each do |cocktail| %>
+      <li><%= link_to cocktail.name, cocktail_path(cocktail) %>
+        <% end %>
+      </ul>
+    </div>
 
-<%= link_to "Create a new coktail", new_cocktail_path %>
+    <%= link_to "Create a new coktail", new_cocktail_path, class: "btn btn-primary" %>
 
-<hr>
-
-<%= cl_image_tag("tqeeebza0akah04hueh9",
-      width: 300, height: 200, crop: :fill) %>
-
-<hr>
-
-<%= cl_image_tag("co3clp2l17kzywywwvze",
-      width: 150, height: 150, crop: :thumb, gravity: :face, :radius=>"max") %>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <%= cl_image_tag("tqeeebza0akah04hueh9",
+        width: 300, height: 200, crop: :fill) %>
+        <%= cl_image_tag("co3clp2l17kzywywwvze",
+        width: 150, height: 150, crop: :thumb, gravity: :face, :radius=>"max") %>
+      </div>
+    </div>
+  </div>
